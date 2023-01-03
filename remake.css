@@ -103,3 +103,11 @@ body{
 .clear:active, .delete:active{
     background-color: rgba(238, 68, 25, 0.818);
 }
+
+.v1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}

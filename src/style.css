@@ -132,3 +132,9 @@ p{
     font-size: .55rem;
     font-style: normal;
 }
+
+.v2{
+    float: right;
+    padding-right: 1rem;
+    display: inline-flex;
+}
