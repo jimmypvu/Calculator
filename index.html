@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <!--<link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="src/normalize.css">
+  <link rel="stylesheet" href="src/style.css">
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Add your site or application content here -->
+  <div class="container">
+    <div class="calculator">
+        <p>Cassio 4All-XPT</p>
+        <input type="text" class="display" />
+        <button type="button" class="button clear" data-num="C">C</button>
+        <button type="button" class="button" data-num="/">/</button>
+        <button type="button" class="button" data-num="7">7</button>
+        <button type="button" class="button" data-num="8">8</button>
+        <button type="button" class="button" data-num="9">9</button>
+        <button type="button" class="button" data-num="*">*</button>
+        <button type="button" class="button" data-num="4">4</button>
+        <button type="button" class="button" data-num="5">5</button>
+        <button type="button" class="button" data-num="6">6</button>
+        <button type="button" class="button" data-num="-">-</button>
+        <button type="button" class="button" data-num="1">1</button>
+        <button type="button" class="button" data-num="2">2</button>
+        <button type="button" class="button" data-num="3">3</button>
+        <button type="button" class="button" data-num="+">+</button>
+        <button type="button" class="button" data-num="0">0</button>
+        <button type="button" class="button" data-num=".">.</button>
+        <button type="button" class="button equal" data-num="=">=</button>
+    </div>
+  </div>
+
+
+  <script src="src/main.js"></script>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>
