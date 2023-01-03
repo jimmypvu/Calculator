@@ -62,9 +62,6 @@ p{
     color: #212121;
     background: rgba(161, 209, 15, 0.4);
     align-items: center;
-}
-
-.current{
     word-wrap: break-word;
     word-break: break-all;
 }
