@@ -5,6 +5,8 @@ html{
 p{
     color: goldenrod;
     padding-bottom: 1rem;
+    font-size: .75rem;
+    font-style: italic;
 }
 
 *{
@@ -24,46 +26,101 @@ p{
 }
 
 .calculator{
-    width: 41rem;
+    width: 37rem;
     height: 60rem;
     background-color: #424249;
     padding: 3rem 2rem;
-    border: 1.5px solid #333338;
+    border: 1.5px solid #272729;
     border-radius: 1rem;
-    box-shadow: -1rem 1.5rem 2rem rgba(0,0,0,.7);
+    box-shadow: -1rem 1.5rem 2rem rgba(0,0,0,.7), -.5rem 1rem 1rem rgba(0,0,0,.5), inset -.25rem -.25rem .5rem rgba(21,21,21,.5);
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
 }
 
+.previous{
+    font-size: 1.35rem;
+    align-items: flex-start;
+}
+
 .display{
-    width: 34rem;
+    width: 32rem;
     height: 8rem;
     margin-bottom: 2rem;
     border-radius: .5rem;
-    border: none;
+    border:.5px solid #333338;
     box-shadow: inset .25rem .25rem .5rem rgba(0,0,0,.5);
     text-align: right;
     pointer-events: none;
-    font-size: 2rem;
-    letter-spacing: .1rem;
+    font-size: 2.65rem;
     padding: 2rem;
     color: #212121;
+    background: rgba(161, 209, 15, 0.4);
+    align-items: center;
 }
 
-.button, .equal{
-    width: 7rem;
-    height: 7rem;
-    margin: 1rem;
-    border: none;
+.button{
+    color: #f5f5f5;
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: .75rem;
+    font-size: 1.75rem;
+    border: 1px solid #212121;
     background: linear-gradient(120deg, #333338, #424249);
     box-shadow: inset -.25rem -.25rem 1rem #212121;
     border-radius: 1rem;
+    letter-spacing: .1rem;
     cursor: pointer;
 }
 
-.clear{
-    width: 25rem;
+.button:hover{
+    filter: brightness(1.15);
 }
 
+.button:active{
+    filter: brightness(.95);
+}
+
+.clear{
+    width: 15rem;
+    background: rgb(152, 4, 11);
+}
+
+.equals{
+    width: 15rem;
+    background: rgb(11, 105, 4);
+}
+
+
+.calculator-model-solar-panel-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40rem;
+    align-items: baseline;
+}
+
+.solar-panel-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.solar-panel{
+    height: 2.25rem;
+    width: 1.5rem;
+    background: rgb(154, 102, 5);
+    border: .5px solid black;
+    border-radius: 1.5px;
+    box-shadow: inset 1px 1px 1px rgba(21,21,21,.8);
+    opacity: .3;
+}
+
+.span-solar{
+    color: #bababa;
+    padding-left: .75rem;
+    margin-right: .75rem;
+    font-size: .55rem;
+    font-style: normal;
+}
