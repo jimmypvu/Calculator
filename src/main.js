@@ -17,7 +17,7 @@ class Calculator {
 
     //clear all numbers method/function
     clear(){
-        this.currentOperand = ''
+        this.currentOperand = '0'
         this.previousOperand = ''
         this.operation = undefined
     }
@@ -45,7 +45,7 @@ class Calculator {
         this.currentOperand = ''
     }
 
-    //compute
+    //compute method
     compute(){
         let computation
         const previous = parseInt(this.previousOperand)
@@ -104,6 +104,7 @@ numberBtns.forEach(button =>
     button.addEventListener('click', function(e){
     calculator.appendNumber(button.innerText)
     calculator.updateDisplay()
+    e.preventDefault()
 }))
 
 //add a listener for each operation button, pass the selected operation to the selectOperation method
