@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vanilla JS Calculator</title>
+        <link rel="stylesheet" href="remake.css">
+        <link rel="stylesheet" href="src/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page--container">
+            <div class="calculator--container">
+                <div class="display--container">
+                    <div class="display--container-previous"></div>
+                    <div class="display--container-current">0</div>
+                </div>
+                <div class="buttons--container">
+                    <button type="button" class="button clear" data-clear="AC">AC</button>
+                    <button type="button" class="button delete" data-delete="DEL">DEL</button>
+                    <button type="button" class="button op" data-operator="/">/</button>
+                    <button type="button" class="button num" data-number=7>7</button>
+                    <button type="button" class="button num" data-number=8>8</button>
+                    <button type="button" class="button num" data-number=9>9</button>
+                    <button type="button" class="button op" data-operator="*">*</button>
+                    <button type="button" class="button num" data-number=1>4</button>
+                    <button type="button" class="button num" data-number=1>5</button>
+                    <button type="button" class="button num" data-number=1>6</button>
+                    <button type="button" class="button op" data-operator="-">-</button>
+                    <button type="button" class="button num" data-number=1>1</button>
+                    <button type="button" class="button num" data-number=2>2</button>
+                    <button type="button" class="button num" data-number=3>3</button>
+                    <button type="button" class="button op" data-operator="+">+</button>
+                    <button type="button" class="button num" data-number=0>0</button>
+                    <button type="button" class="button num dot" data-number=".">.</button>
+                    <button type="button" class="button equals" data-equals="=">=</button>
+                </div>
+            </div>
+        </div>
+    <script src="remake.js"></script>
+    </body>
+</html>
