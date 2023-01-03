@@ -48,8 +48,8 @@ class Calculator {
     //compute method
     compute(){
         let computation
-        const previous = parseInt(this.previousOperand)
-        const current = parseInt(this.currentOperand)
+        const previous = parseFloat(this.previousOperand)
+        const current = parseFloat(this.currentOperand)
         if(isNaN(previous) || isNaN(current)) return;
         switch(this.operation){
             case '-': computation = previous - current
