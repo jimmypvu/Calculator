@@ -1,5 +1,7 @@
 html{
     font-size: 62.5%;
+    background: rgb(142,122,122);
+    background: radial-gradient(circle, rgba(142,122,122,1) 0%, rgba(142,122,122,1) 36%, rgba(42,42,49,1) 100%);
 }
 
 p{
