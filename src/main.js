@@ -31,6 +31,7 @@ class Calculator {
     appendNumber(digit){
         //early return to stop multiple decimal points from being input
         if(digit === '.' && this.currentOperand.includes('.')) return;
+        if(this.currentOperand.length >= 13) return;
         this.currentOperand = this.currentOperand.toString() + digit.toString()
     }
 
@@ -102,9 +103,10 @@ const calculator = new Calculator(previousOperatorTextElement, currentOperatorTe
 //add a click handler to each number button, append that digit to the current operand, update display
 numberBtns.forEach(button =>
     button.addEventListener('click', function(e){
+    e.preventDefault()
+    if(calculator.currentOperand.length >= 13) return;
     calculator.appendNumber(button.innerText)
     calculator.updateDisplay()
-    e.preventDefault()
 }))
 
 //add a listener for each operation button, pass the selected operation to the selectOperation method

@@ -40,6 +40,7 @@ p{
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .previous{
@@ -49,8 +50,8 @@ p{
 
 .display{
     width: 32rem;
-    height: 8rem;
-    margin-bottom: 2rem;
+    height: 7.5rem;
+    margin-bottom: 1rem;
     border-radius: .5rem;
     border:.5px solid #333338;
     box-shadow: inset .25rem .25rem .5rem rgba(0,0,0,.5);
@@ -116,8 +117,8 @@ p{
 }
 
 .solar-panel{
-    height: 2.25rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 1.75rem;
     background: rgb(154, 102, 5);
     border: .5px solid black;
     border-radius: 1.5px;
@@ -134,7 +135,9 @@ p{
 }
 
 .v2{
-    float: right;
+    float: left;
     padding-right: 1rem;
     display: inline-flex;
+    text-decoration: none;
+    font-size: 1.35rem;
 }
